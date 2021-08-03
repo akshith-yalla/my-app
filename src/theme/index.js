@@ -1,9 +1,9 @@
-import { makeStyles, responsiveFontSizes } from "@material-ui/core/styles";
+import { createTheme, responsiveFontSizes } from "@material-ui/core/styles";
 
 import { grey, cyan, orange } from "@material-ui/core/colors";
 
 
-const baseTheme = makeStyles({
+const baseTheme = createTheme({
   container: {
     primary: {
       borderRadius: '1rem',

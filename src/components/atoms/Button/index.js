@@ -2,15 +2,18 @@ import React from "react";
 import PropTypes from "prop-types";
 import Button from "@material-ui/core/Button";
 
-const ButtonComponent = (props) => (
+const ButtonComponent = (props) => {
+  const   {disabled, onClick, title} = props;
+
+ return (
   <Button
-  disabled={props.disabled}
-  onClick={props.onClick}
+  disabled={disabled}
+  onClick={onClick}
   size="medium" 
   >
-    {props.title}
+    {title}
   </Button>
-);
+)};
 
 ButtonComponent.propTypes = {
   title: PropTypes.string.isRequired,

@@ -16,11 +16,13 @@ const getMappedVariant = (variant) => {
   }
 };
 
-const TypographyComponent = (props) => (
-  <Typography variant={getMappedVariant(props.variant)}>
-    {props.children}
+const TypographyComponent = (props) =>{ 
+  const {variant, children} = props;
+  return(
+  <Typography variant={getMappedVariant(variant)}>
+    {children}
   </Typography>
-);
+)};
 
 TypographyComponent.propTypes = {
   children: PropTypes.string.isRequired,

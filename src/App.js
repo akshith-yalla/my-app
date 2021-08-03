@@ -1,5 +1,5 @@
 import React from 'react';
-import BookCardPage from './components/pages/BookCardPage';
+import BookCardPage from './pages/BookCardPage';
 
 const App = () => {
   return (
